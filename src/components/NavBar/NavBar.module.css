@@ -1,0 +1,178 @@
+/* NavBar.module.css */
+
+.header {
+    padding: 1rem;
+    background-color: #071550;
+    color: rgb(245, 245, 245);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav_data {
+    display: flex;
+    align-items: center;
+}
+
+.nav_logo {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nav_toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.nav_burger,
+.nav_close {
+    font-size: 2rem;
+    display: none;
+}
+
+.nav_menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav_list {
+    display: flex;
+    list-style: none;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    margin: 0 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.nav_link:hover {
+    color: rgb(92, 206, 206);
+}
+
+.dropdown_item {
+    position: relative;
+}
+
+.dropdown_arrow {
+    margin-left: 0.5rem;
+}
+
+.dropdown_menu,
+.dropdown_submenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0.5rem 0;
+}
+
+.dropdown_menu .dropdown_link,
+.dropdown_submenu .dropdown_sublink {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.dropdown_item:hover .dropdown_menu,
+.dropdown_subitem:hover .dropdown_submenu {
+    display: block;
+}
+
+.nav_search {
+    position: relative;
+    width: 40%;
+    text-align: center;
+    /* left: 10%; */
+}
+
+.search_icon {
+    position: absolute;
+    top: 11px;
+    font-size: larger;
+    color: blueviolet;
+    left: 20%;
+}
+
+.nav_search_box {
+    line-height: 2rem;
+    width: 60%;
+    border-radius: 20px;
+    padding-left: 40px;
+    font-size: small;
+    background-color: antiquewhite;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+    }
+    .nav_data{
+        padding: 10px 0px;
+    }
+    .nav_toggle {
+        display: block;
+    }
+
+    .nav_burger {
+        display: inline-block;
+    }
+
+    .nav_search{
+        padding: 10px 0px;
+        width: fit-content;
+    }
+
+    .nav_search_box {
+        width: 40vw;
+    }
+    .search_icon{
+        left: 8%;
+        top: 19px;
+    }
+
+    .nav_menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        background-color: #333;
+        padding: 1rem;
+        opacity: .5;
+        width: 40%;
+    }
+
+    .nav_list {
+        flex-direction: column;
+    }
+
+    .nav_link {
+        margin: 1rem 1rem;
+    }
+
+    .nav_menu.active {
+        display: flex;
+    }
+
+    .nav_close {
+        display: inline-block;
+    }
+}
+
+.hidden {
+    display: none;
+}
