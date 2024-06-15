@@ -104,7 +104,7 @@
     top: 11px;
     font-size: larger;
     color: blueviolet;
-    left: 20%;
+    left: 18%;
 }
 
 .nav_search_box {
@@ -114,6 +114,9 @@
     padding-left: 40px;
     font-size: small;
     background-color: antiquewhite;
+}
+.nav_search_box:focus{
+    width: 62%;
 }
 
 @media (max-width: 768px) {

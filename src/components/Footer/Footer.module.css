@@ -1,0 +1,94 @@
+/* MyComponent.module.css */
+
+.footer{
+    background-color: #071550;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 2rem;
+    align-content: center;
+    font-size: .8rem;
+}
+.footer_card{
+    width: 250px;
+    height: 198px;
+    padding: 1rem .5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+/* Remove list style */
+.footer_card ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Remove default anchor tag styling */
+  .footer_card a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .footer_title{
+    color: #9c8104;
+    font-size: medium;
+  }
+
+  .footer_card li{
+    padding: .3rem 0;
+  }
+.footer_card i{
+    font-size: 1.2rem;
+    padding: 0 .6rem 0 0;
+}
+.flex_row{
+    display: flex;
+}
+.form_input{
+    border-style: none;
+    background-color: inherit;
+    color: white;
+}
+.footer_form{
+    border-style: none;
+    color: white;
+    border-bottom: 2px solid white;
+}
+.footer_button{
+    background-color: inherit;
+    border-style: none;
+    color: #9c8104;
+    font-weight: 600;
+}
+.footer_button:hover{
+    cursor: pointer;
+}
+a.footer_link{
+    font-size: medium;
+    font-weight: 600;
+    color: #9c8104;
+}
+.form_checkbox{
+    display: flex;
+}
+  @media (max-width: 400px) {
+    .footer{
+        padding: 1rem .5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_card{
+        width: 80%;
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+  }
