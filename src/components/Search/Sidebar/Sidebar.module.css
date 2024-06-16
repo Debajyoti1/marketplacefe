@@ -1,0 +1,20 @@
+.sidebar {
+    width: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar h5{
+    font-size: 1rem;
+  }
+  .sidebarItem {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .sidebarItem select{
+    width: 100%;
+    line-height: 2rem;
+    border: 2px solid rgb(171, 171, 171);
+    padding: 8px 10px;
+  }
