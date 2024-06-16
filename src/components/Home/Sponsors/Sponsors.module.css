@@ -1,0 +1,36 @@
+.sponsors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  .sponsors h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .sponsors_images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    border-top: 1px solid rgb(232, 230, 230);
+    border-bottom: 1px solid rgb(232, 230, 230);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .sponsors_images img {
+    max-width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .sponsors_images img:hover {
+    transform: scale(1.1);
+  }
+  
