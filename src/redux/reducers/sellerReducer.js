@@ -1,4 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { BACKEND_API_URL } from "../../configurations/config";
 
 const initialState={
     searchData: null,
@@ -16,7 +17,7 @@ export const searchGetSetData=createAsyncThunk(
     'seller/searchGetSetData',
     async(args,thunkAPI)=>{
         try {
-            const response = await fetch('http://localhost:8000/seller/search', {
+            const response = await fetch(BACKEND_API_URL+'/seller/search', {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',
@@ -39,7 +40,7 @@ export const getSearchData=createAsyncThunk(
     async(args,thunkAPI)=>{
         try {
             thunkAPI.dispatch(sellerAction.setLoading(true))
-            const response= await fetch('http://localhost:8000/seller/getdetails')
+            const response= await fetch(BACKEND_API_URL+'/seller/getdetails')
             if(response.ok){
                 const resbody=await response.json()
                 // console.log(resbody);
