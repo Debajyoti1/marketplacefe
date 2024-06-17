@@ -1,7 +1,15 @@
 .mainContent {
     flex: 1;
     padding: 20px;
-    background-color: #f4f4f4;
     overflow-x: hidden;
+    max-width: 90%;
   }
   
+.product_cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
