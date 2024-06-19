@@ -76,6 +76,8 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     list-style: none;
     padding: 0.5rem 0;
+    z-index: 10;
+    width: 150px;
 }
 
 .dropdown_menu .dropdown_link,
@@ -155,8 +157,8 @@
         right: 0;
         background-color: #333;
         padding: 1rem;
-        opacity: .5;
         width: 40%;
+        z-index: 10;
     }
 
     .nav_list {
